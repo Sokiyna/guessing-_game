@@ -81,12 +81,12 @@
 
 let userName = prompt('May I have your name?');
 
-while (!userName){
+while (!userName) {
     userName = prompt('please write your name!');
 
-} 
+}
 
-    
+
 
 
 
@@ -94,211 +94,223 @@ alert('You are welcome   ' + userName + ' , enjoy the rest of the day');
 
 
 
-let score =0;
+let score = 0;
 
-for( let i = 0; i < 4; i++) {
+function funGame1() {
+    let funGame1 = '';
+    for (let i = 0; i < 4; i++) {
 
-    let funGame1 = prompt("Guess a number between 25 and 30 ");
+        funGame1 = prompt("Guess a number between 25 and 30 ");
 
-    if(funGame1 == "27"){
-        alert("You made it fast! yes the number is 27");
-        score++;
-        break;
-    }
-    else if(funGame1 == "25"){
-        alert("You are close");
-    }
-     else if(funGame1 == "26"){
-         alert("You are too close");}
-         
-         else if(funGame1 == "30"){
+        if (funGame1 == "27") {
+            alert("You made it fast! yes the number is 27");
+            score++;
+            break;
+        }
+        else if (funGame1 == "25") {
+            alert("You are close");
+        }
+        else if (funGame1 == "26") {
+            alert("You are too close");
+        }
+
+        else if (funGame1 == "30") {
             alert("You are too far :( ")
-         }  
-             
-         else if (funGame1 !== "27"){
-                alert(" I am sorry but the answer is not correct ");
-               
-            }
+        }
 
-            
+        else if (funGame1 !== "27") {
+            alert(" I am sorry but the answer is not correct ");
+
+        }
+
+
+    }
+
+    alert("The trails for the first level end, and the correct number is 27");
+
 }
 
-alert("The trails for the first level end, and the correct number is 27")
+funGame1();
 
-
-
-for( let i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
 
     let funGame2 = prompt("Guess a number between 35 and 40 ");
 
-    if(funGame2 == "37"){
+    if (funGame2 == "37") {
         alert("You made it fast! yes the number is 37");
         score++;
         break;
     }
-    else if(funGame2 == "35"){
+    else if (funGame2 == "35") {
         alert("You are close");
     }
-     else if(funGame2 == "36"){
-         alert("You are too close");}
-         
-         else if(funGame2 == "40"){
-            alert("You are too far :( ")
-         }  
-             
-         else if (funGame2 !== "37"){
-                alert(" I am sorry but the answer is not correct ");
-               
-            }
-       
+    else if (funGame2 == "36") {
+        alert("You are too close");
+    }
+
+    else if (funGame2 == "40") {
+        alert("You are too far :( ");
+    }
+
+    else if (funGame2 !== "37") {
+        alert(" I am sorry but the answer is not correct ");
+
+    }
+
 }
 
-alert("The trails for the second level end, and the correct number is 37")
+alert("The trails for the second level end, and the correct number is 37");
 
 
 
-for( let i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
 
     let funGame3 = prompt("Guess a number between 45 and 50 ");
 
-    if(funGame3 == "47"){
+    if (funGame3 == "47") {
         alert("You made it fast! yes the number is 47");
         score++;
         break;
     }
-    else if(funGame3 == "45"){
+    else if (funGame3 == "45") {
         alert("You are close");
     }
-     else if(funGame3 == "46"){
-         alert("You are too close");}
-         
-         else if(funGame3 == "50"){
-            alert("You are too far :( ")
-         }  
-             
-         else if (funGame3 !== "47"){
-                alert(" I am sorry but the answer is not correct ");
-            
-               
-            }
-       
+    else if (funGame3 == "46") {
+        alert("You are too close");
+    }
+
+    else if (funGame3 == "50") {
+        alert("You are too far :( ");
+    }
+
+    else if (funGame3 !== "47") {
+        alert(" I am sorry but the answer is not correct ");
+
+
+    }
+
 }
 
 alert("The trails for the third level end, and the correct number is 47")
 
-for( let i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
 
     let funGame4 = prompt("Guess a number between 55 and 60 ");
 
-    if(funGame4 == "57"){
+    if (funGame4 == "57") {
         alert("You made it fast! yes the number is 57");
         score++;
         break;
     }
-    else if(funGame4 == "55"){
+    else if (funGame4 == "55") {
         alert("You are close");
     }
-     else if(funGame4 == "56"){
-         alert("You are too close");}
-         
-         else if(funGame4 == "60"){
-            alert("You are too far :( ")
-         }  
-             
-         else if (funGame4 !== "57"){
-                alert(" I am sorry but the answer is not correct ");
-            
-               
-            }
-       
+    else if (funGame4 == "56") {
+        alert("You are too close");
+    }
+
+    else if (funGame4 == "60") {
+        alert("You are too far :( ");
+    }
+
+    else if (funGame4 !== "57") {
+        alert(" I am sorry but the answer is not correct ");
+
+
+    }
+
 }
 
-alert("The trails for the fourth level end, and the correct number is 57")
+alert("The trails for the fourth level end, and the correct number is 57");
 
 
-for( let i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
 
     let funGame5 = prompt("Guess a number between 65 and 70 ");
 
-    if(funGame5 == "67"){
+    if (funGame5 == "67") {
         alert("You made it fast! yes the number is 67");
         score++;
         break;
     }
-    else if(funGame5 == "65"){
+    else if (funGame5 == "65") {
         alert("You are close");
     }
-     else if(funGame5 == "66"){
-         alert("You are too close");}
-         
-         else if(funGame5 == "70"){
-            alert("You are too far :( ")
-         }  
-             
-         else if (funGame5 !== "67"){
-                alert(" I am sorry but the answer is not correct ");
-            
-               
-            }
-       
+    else if (funGame5 == "66") {
+        alert("You are too close");
+    }
+
+    else if (funGame5 == "70") {
+        alert("You are too far :( ");
+    }
+
+    else if (funGame5 !== "67") {
+        alert(" I am sorry but the answer is not correct ");
+
+
+    }
+
 }
 
 alert("The trails for the fifth level end, and the correct number is 67")
 
 
-for( let i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
 
     let funGame6 = prompt("Guess a number between 75 and 80 ");
 
-    if(funGame6 == "77"){
+    if (funGame6 == "77") {
         alert("You made it fast! yes the number is 57");
         score++;
         break;
     }
-    else if(funGame6 == "75"){
+    else if (funGame6 == "75") {
         alert("You are close");
     }
-     else if(funGame6 == "76"){
-         alert("You are too close");}
-         
-         else if(funGame6 == "80"){
-            alert("You are too far :( ")
-         }  
-             
-         else if (funGame6 !== "77"){
-                alert(" I am sorry but the answer is not correct ");
-            
-               
-            }
-       
+    else if (funGame6 == "76") {
+        alert("You are too close");
+    }
+
+    else if (funGame6 == "80") {
+        alert("You are too far :( ");
+    }
+
+    else if (funGame6 !== "77") {
+        alert(" I am sorry but the answer is not correct ");
+
+
+    }
+
 }
 
-alert("The trails for the sixth level end, and the correct number is 77")
+alert("The trails for the sixth level end, and the correct number is 77");
 
 
-let myTalent =[" swimming", " football", " basketball"];
+let myTalent = ["swimming", "football", "basketball"];
 
-for (let i = 0; i <6; i++){
+let flag = false;
 
-    let userAnswer = prompt("Can you guess in which sport I am talented?")
+for (let i = 0; i < 6; i++) {
 
-    userAnswer= userAnswer.toLowerCase();
+    let userAnswer = prompt("Can you guess in which sport I am talented?");
 
-    for(let j=0; j<6; j++)
+    userAnswer = userAnswer.toLowerCase();
+    for (let x = 0; x < myTalent.length; x++) {
+        if (userAnswer === myTalent[x].toLowerCase()) {
+            flag = true;
+            break;
+        }
+    }
 
-    if(userAnswer === myTalent[i]){
-
-        alert("You are correct");
-        score++;
-        i=6;
+    if (flag) {
+        alert('That is correct my favorite talent is ' + userAnswer);
         break;
     }
 
-     else if( i > 6 ){
+    else {
+        alert('That is wrong try again');
+    }
 
-            alert("I am talented at  " +"  "+ myTalent)
-        }
-        
 
 }
 
@@ -309,7 +321,7 @@ alert('Good Job!... You got ' + score + ' correct answers!');
 
 
 
- 
+
 
 
 
