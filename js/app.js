@@ -242,9 +242,12 @@ function funGame4() {
 }
 
 funGame4();
+
+
+let funGame5 = '';
 for (let i = 0; i < 4; i++) {
 
-    let funGame5 = prompt("Guess a number between 65 and 70 ");
+    funGame5 = prompt("Guess a number between 65 and 70 ");
 
     if (funGame5 == "67") {
         alert("You made it fast! yes the number is 67");
