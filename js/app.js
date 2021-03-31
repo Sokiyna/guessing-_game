@@ -168,36 +168,42 @@ function funGame2() {
 funGame2();
 
 
-for (let i = 0; i < 4; i++) {
+function funGame3() {
 
-    let funGame3 = prompt("Guess a number between 45 and 50 ");
+    let funGame3 = '';
+    for (let i = 0; i < 4; i++) {
 
-    if (funGame3 == "47") {
-        alert("You made it fast! yes the number is 47");
-        score++;
-        break;
+        funGame3 = prompt("Guess a number between 45 and 50 ");
+
+        if (funGame3 == "47") {
+            alert("You made it fast! yes the number is 47");
+            score++;
+            break;
+        }
+        else if (funGame3 == "45") {
+            alert("You are close");
+        }
+        else if (funGame3 == "46") {
+            alert("You are too close");
+        }
+
+        else if (funGame3 == "50") {
+            alert("You are too far :( ");
+        }
+
+        else if (funGame3 !== "47") {
+            alert(" I am sorry but the answer is not correct ");
+
+
+        }
+
     }
-    else if (funGame3 == "45") {
-        alert("You are close");
-    }
-    else if (funGame3 == "46") {
-        alert("You are too close");
-    }
 
-    else if (funGame3 == "50") {
-        alert("You are too far :( ");
-    }
-
-    else if (funGame3 !== "47") {
-        alert(" I am sorry but the answer is not correct ");
-
-
-    }
-
+    alert("The trails for the third level end, and the correct number is 47")
 }
 
-alert("The trails for the third level end, and the correct number is 47")
 
+funGame3();
 for (let i = 0; i < 4; i++) {
 
     let funGame4 = prompt("Guess a number between 55 and 60 ");
