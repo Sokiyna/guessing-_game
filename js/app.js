@@ -204,37 +204,44 @@ function funGame3() {
 
 
 funGame3();
-for (let i = 0; i < 4; i++) {
 
-    let funGame4 = prompt("Guess a number between 55 and 60 ");
+function funGame4() {
 
-    if (funGame4 == "57") {
-        alert("You made it fast! yes the number is 57");
-        score++;
-        break;
+    let funGame4;
+
+    for (let i = 0; i < 4; i++) {
+
+        funGame4 = prompt("Guess a number between 55 and 60 ");
+
+        if (funGame4 == "57") {
+            alert("You made it fast! yes the number is 57");
+            score++;
+            break;
+        }
+        else if (funGame4 == "55") {
+            alert("You are close");
+        }
+        else if (funGame4 == "56") {
+            alert("You are too close");
+        }
+
+        else if (funGame4 == "60") {
+            alert("You are too far :( ");
+        }
+
+        else if (funGame4 !== "57") {
+            alert(" I am sorry but the answer is not correct ");
+
+
+        }
+
     }
-    else if (funGame4 == "55") {
-        alert("You are close");
-    }
-    else if (funGame4 == "56") {
-        alert("You are too close");
-    }
 
-    else if (funGame4 == "60") {
-        alert("You are too far :( ");
-    }
-
-    else if (funGame4 !== "57") {
-        alert(" I am sorry but the answer is not correct ");
-
-
-    }
+    alert("The trails for the fourth level end, and the correct number is 57");
 
 }
 
-alert("The trails for the fourth level end, and the correct number is 57");
-
-
+funGame4();
 for (let i = 0; i < 4; i++) {
 
     let funGame5 = prompt("Guess a number between 65 and 70 ");
