@@ -21,3 +21,10 @@ Adjust:
 Today I improved the code by using the for loop and the if statments, to produce an output count the score for the user correct answers.
 
 
+**Lab 04 - Pair Programming: More extensions to About Me**
+
+- **Feedback : Mohammed was the drive and sokiyna was the navigator on this project and she was very helpful and that was a very helping and useful to practice pair programming**
+
+- **The driver was : Mohammed Mohiesen**.
+
+- **The navigator was : Sokiyna naser**.
