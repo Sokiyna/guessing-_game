@@ -132,35 +132,40 @@ function funGame1() {
 
 funGame1();
 
-for (let i = 0; i < 4; i++) {
 
-    let funGame2 = prompt("Guess a number between 35 and 40 ");
+function funGame2() {
+    let funGame2 = '';
+    for (let i = 0; i < 4; i++) {
 
-    if (funGame2 == "37") {
-        alert("You made it fast! yes the number is 37");
-        score++;
-        break;
+        funGame2 = prompt("Guess a number between 35 and 40 ");
+
+        if (funGame2 == "37") {
+            alert("You made it fast! yes the number is 37");
+            score++;
+            break;
+        }
+        else if (funGame2 == "35") {
+            alert("You are close");
+        }
+        else if (funGame2 == "36") {
+            alert("You are too close");
+        }
+
+        else if (funGame2 == "40") {
+            alert("You are too far :( ");
+        }
+
+        else if (funGame2 !== "37") {
+            alert(" I am sorry but the answer is not correct ");
+
+        }
+
     }
-    else if (funGame2 == "35") {
-        alert("You are close");
-    }
-    else if (funGame2 == "36") {
-        alert("You are too close");
-    }
 
-    else if (funGame2 == "40") {
-        alert("You are too far :( ");
-    }
-
-    else if (funGame2 !== "37") {
-        alert(" I am sorry but the answer is not correct ");
-
-    }
-
+    alert("The trails for the second level end, and the correct number is 37");
 }
 
-alert("The trails for the second level end, and the correct number is 37");
-
+funGame2();
 
 
 for (let i = 0; i < 4; i++) {
