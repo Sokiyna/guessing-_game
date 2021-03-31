@@ -315,35 +315,41 @@ function funGame6() {
 
 funGame6();
 
-let myTalent = ["swimming", "football", "basketball"];
+function myTalent() {
 
-let flag = false;
+    let myTalent = ["swimming", "football", "basketball"];
 
-for (let i = 0; i < 6; i++) {
+    let flag = false;
 
-    let userAnswer = prompt("Can you guess in which sport I am talented?");
+    for (let i = 0; i < 6; i++) {
 
-    userAnswer = userAnswer.toLowerCase();
-    for (let x = 0; x < myTalent.length; x++) {
-        if (userAnswer === myTalent[x].toLowerCase()) {
-            flag = true;
+        let userAnswer = prompt("Can you guess in which sport I am talented?");
+
+        userAnswer = userAnswer.toLowerCase();
+        for (let x = 0; x < myTalent.length; x++) {
+            if (userAnswer === myTalent[x].toLowerCase()) {
+                flag = true;
+                break;
+            }
+        }
+
+        if (flag) {
+            alert('That is correct my favorite talent is ' + userAnswer);
             break;
         }
+
+        else {
+            alert('That is wrong try again');
+        }
+
+
     }
-
-    if (flag) {
-        alert('That is correct my favorite talent is ' + userAnswer);
-        break;
-    }
-
-    else {
-        alert('That is wrong try again');
-    }
-
-
 }
 
-alert('Good Job!... You got ' + score + ' correct answers!');
+myTalent();
+
+
+alert('Good Job!... You got ' + score + ' correct answers! out of 7 ');
 
 
 
